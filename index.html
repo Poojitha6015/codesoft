@@ -3,46 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Portfolio </title>
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
-
 <body>
-    <header class="header">
-        <a href="#" class="logo">Portfolio</a>
-        <nav class="navbar">
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Skill</a>
-            <a href="#">Portfolio</a>
-            <a href="#">Contact</a>
+    <div class="background-image">
+    
+    <header>
+        <nav class="navbar section-content">
+            <a href="#" class="nav-logo">
+                <h2 class="logo-text">Chai</h2>
+            </a>
+            <ul class="nav-menu">
+                <button id="menu-close-button" class="fas fa-times"></button>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link">About</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Menu</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Testimonials</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Gallery</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <button id="menu-open-button" class="fas fa-bars" style="color: white;"></button>
         </nav>
     </header>
 
-    <section class="home">
-        <div class="home-content">
-            <h3>Hello, It's Me</h3>
-            <h1>Poojitha Moggulanna</h1>
-            <h3>And I'm a </h3>
-            <ul><h4>
-                <li>FRONTEND DEVELOPER</li>
-                <li>BACKEND DEVELOPER</li>
-                <li>DATABASE</li>
-            </ul></h4>
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsMByR0HtVVv7Y4JC7dCtbbpMxR7ON4VUa4A&s">
-            <p>I am a recent EEE graduate with a strong passion for IT and Software development brings me here.
-            Proficient in Java,SQL,HTML,CSS and JavaScript with experience from academic projects and self-learning
-            seeking an entry-level role in IT industry to grow technically and contribute effectively to team goals </p>
-            <div class="home-sci">
-                <a href="#"><i class='bx bxl-facebook'></i></a>
-                <a href="#"><i class='bx bxl-instagram'></i></a>
-                <a href="#"><i class='bx bxl-whatsapp-square' ></i></a>
-                <a href="#"><i class='bx bxl-tiktok'></i></a>
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="section-content">
+                <div class="hero-details">
+                    <h2 class="title">Step and sip</h2>
+                    <h3 class="subtitle"> Make your day great with our special tea! </h3>
+                    <p class="description"> Welcome to our Tea paradise-handpicked leaves,rich aromas,and claming
+                        moments in every cup.Sip slowly,live well.</p>
+
+                    <div>
+                        <a href="#" class="button order-now">Order Now</a>
+                        <a href="#" class="button contact-us">Contact Us</a>
+                    </div>
+                </div>
             </div>
-            <a href="#" class="btn-box">More About Me</a>
-        </div>
-    </section>
-    <script src="script.js"></script>
+    </main>
+</div>
 </body>
 </html>
