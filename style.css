@@ -1,76 +1,153 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'poppins','sana-serif';
     box-sizing: border-box;
+    font-family: 'poppins', semi-serif;
 }
 
-.container{
+body{
+    color: #ededed;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
+    padding: 20px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+@keyframes slideTop {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.navbar a {
+    display: inline-block;
+    font-size: 25px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    opacity: 0;
+    animation: slideTop 0.5s ease forwards;
+    animation-delay: 0.5s;
+}
+
+
+.logo{
+    position: relative;
+    font-size: 25px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.navbar a{
+    display: inline-block;
+    font-size: 25px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: 0.3s;
+    opacity: 0;
+    transition: slideTop 0.5s ease forwards;
+}
+
+.navbar a:hover{
+    color: #0ef;
+}
+
+.home{
+    position: relative;
+    width: 100%;
+    justify-content: space-between;
     height: 100vh;
-    background: linear-gradient(#000046,#1cb5e0);
+    background: linear-gradient(#200122,#6f0000);
+    background-size: cover;
+    background-position: center;
     display: flex;
     align-items: center;
+    padding: 70px 10% 0;
+}
+
+.home-content{
+    max-width: 600px;
+}
+
+.home-content h3{
+    font-size: 32px;
+    font-weight: 700;
+    padding: 5px;
+}
+
+.home-content h1{
+    font-size: 56px;
+    font-weight: 600;
+    margin: -3px 0;
+}
+
+.home-content p{
+    font-size: 20px;
+    padding: 4px;
+}
+
+.home-sci a{
+    display: inline-flex;
     justify-content: center;
-}
-.Calculator{
-    background: linear-gradient(#159957,#155799);
-    padding: 10px;
-    border-radius: 10px;
-}
-
-.Calculator form input{
-    border: 0;
-    outline: 0;
-    width: 50px;
-    height: 50px;
-    border-radius: 10px;
-    box-shadow: -8px -8px 15px rgba(90, 6, 6, 0.1),5px 5px 5px rgba(0, 0, 0, 0.2);
+    align-items: center;
+    width: 40px;
+    height: 40px;
     background: transparent;
-    font-size: 23px;
-    color: white;
-    cursor: pointer;
-    margin: 10px;
+    border: 2px solid #0ef;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #0ef;
+    text-decoration: none;
+    margin: 30px 15px 30px 0;
 }
 
-.display {
-  border: 1px solid black;
-  width: 300px; /* Or your desired width */
-  padding-top: 5px;    /* Reduce top padding */
-  padding-bottom: 5px; /* Reduce bottom padding */
-  padding-left: 10px;   /* Keep or adjust left padding */
-  padding-right: 10px;  /* Keep or adjust right padding */
-  margin: 10px;
+.home-sci a:hover{
+    background: #0ef;
+    color: #081b29;
+    box-shadow: 0 0 2px #0ef;
 }
 
-.display input[type="text"] {
-  border: none;
-  outline: none;
-  padding: 5px 0; /* Reduce top and bottom padding of the input */
-  width: 100%;
-  box-sizing: border-box;
-  height: 30px; /* Allow input height to adjust based on content and padding */
+.btn-box{
+    display: inline-block;
+    padding: 12px 28px;
+    background: #0ef;
+    border-radius: 40px;
+    font-size: 16px;
+    color: #081b29;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.btn-box:hover{
+    box-shadow: 0 0 5px cyan,
+        0 0 25px cyan, 0 0 50px cyan,
+        0 0 100px cyan ,0 0 200px cyan
 }
 
 
-
-form .display{
-    display: flex;
-    justify-content: flex-end;
-    margin: 10px 0;
-}
-
-form .display input{
-    text-align: right;
-    flex: 1;
-    font-size: 30px;
-    box-shadow: none;
-}
-
-form input.equal{
-    width: 125px;
-}
-
-form input.operator{
-    color: #e4eb21;
-}
+    img{
+        position: absolute;
+        top: 50%;
+        left: 70%;
+        transform: translate(-50%,-50%);
+        width: 300px;
+        height: 250px;
+    }

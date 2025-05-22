@@ -3,50 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculator</title>
+    <title> Portfolio </title>
     <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
-<body>
-    <div class="container">
-    <div class="Calculator">
-        <h1 style="color: aliceblue;"> Calculator </h1>
-       <form>
-        <div class="display">
-           <input type="text" name="display" id="display">
-        </div>
 
-        <div>
-           <input type="button" value="AC" onclick="display.value = '' " class="operator">
-           <input type="button" value="DE" onclick="display.value = display.value.toString().slice(0,-1)" class="operator">
-           <input type="button" value="." onclick="display.value += '.' " class="operator">
-           <input type="button" value="/" onclick="display.value += '/' " class="operator">
+<body>
+    <header class="header">
+        <a href="#" class="logo">Portfolio</a>
+        <nav class="navbar">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Skill</a>
+            <a href="#">Portfolio</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <section class="home">
+        <div class="home-content">
+            <h3>Hello, It's Me</h3>
+            <h1>Poojitha Moggulanna</h1>
+            <h3>And I'm a </h3>
+            <ul><h4>
+                <li>FRONTEND DEVELOPER</li>
+                <li>BACKEND DEVELOPER</li>
+                <li>DATABASE</li>
+            </ul></h4>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsMByR0HtVVv7Y4JC7dCtbbpMxR7ON4VUa4A&s">
+            <p>I am a recent EEE graduate with a strong passion for IT and Software development brings me here.
+            Proficient in Java,SQL,HTML,CSS and JavaScript with experience from academic projects and self-learning
+            seeking an entry-level role in IT industry to grow technically and contribute effectively to team goals </p>
+            <div class="home-sci">
+                <a href="#"><i class='bx bxl-facebook'></i></a>
+                <a href="#"><i class='bx bxl-instagram'></i></a>
+                <a href="#"><i class='bx bxl-whatsapp-square' ></i></a>
+                <a href="#"><i class='bx bxl-tiktok'></i></a>
+            </div>
+            <a href="#" class="btn-box">More About Me</a>
         </div>
-        <div>
-          <input type="button" value="7" onclick="display.value += '7'">
-          <input type="button" value="8" onclick="display.value += '8'">
-          <input type="button" value="9" onclick="display.value += '9'">
-          <input type="button" value="*" onclick="display.value += '*'" class="operator">
-        </div>
-        <div>
-           <input type="button" value="4" onclick="display.value += '4'">  
-           <input type="button" value="5" onclick="display.value += '5'">
-           <input type="button" value="6" onclick="display.value += '6'">
-           <input type="button" value="-" onclick="display.value += '-'" class="operator">
-        </div>   
-        <div>
-            <input type="button" value="1" onclick="display.value += '1'">
-            <input type="button" value="2" onclick="display.value += '2'">
-            <input type="button" value="3" onclick="display.value += '3'">
-            <input type="button" value="+" onclick="display.value += '+'" class="operator">
-        </div>
-        <div>
-            <input type="button" value="00" onclick="display.value += '00'">
-            <input type="button" value="0" onclick="display.value += '0'">
-            <input type="button" value="=" onclick="display.value=eval(display.value)" class="equal operator">
-        </div>
-    </form>
-    </div>
-    </div>
+    </section>
     <script src="script.js"></script>
 </body>
 </html>
