@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins','sana-serif';
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(#000046,#1cb5e0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Calculator{
+    background: linear-gradient(#159957,#155799);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.Calculator form input{
+    border: 0;
+    outline: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    box-shadow: -8px -8px 15px rgba(90, 6, 6, 0.1),5px 5px 5px rgba(0, 0, 0, 0.2);
+    background: transparent;
+    font-size: 23px;
+    color: white;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.display {
+  border: 1px solid black;
+  width: 300px; /* Or your desired width */
+  padding-top: 5px;    /* Reduce top padding */
+  padding-bottom: 5px; /* Reduce bottom padding */
+  padding-left: 10px;   /* Keep or adjust left padding */
+  padding-right: 10px;  /* Keep or adjust right padding */
+  margin: 10px;
+}
+
+.display input[type="text"] {
+  border: none;
+  outline: none;
+  padding: 5px 0; /* Reduce top and bottom padding of the input */
+  width: 100%;
+  box-sizing: border-box;
+  height: 30px; /* Allow input height to adjust based on content and padding */
+}
+
+
+
+form .display{
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px 0;
+}
+
+form .display input{
+    text-align: right;
+    flex: 1;
+    font-size: 30px;
+    box-shadow: none;
+}
+
+form input.equal{
+    width: 125px;
+}
+
+form input.operator{
+    color: #e4eb21;
+}
